@@ -1,0 +1,18 @@
+
+Login With NO Exception
+.\PerformanceTest.ps1 -Url "https://localhost:7224/api/User/login_exception?emailAddress=salihcantekin@gmail.com&password=123456" -RequestCount 20
+
+
+
+Login With Exception
+.\PerformanceTest.ps1 -Url "https://localhost:7224/api/User/login_exception?emailAddress=&password=123456" -RequestCount 20
+
+
+
+ONE OF With Exception
+.\PerformanceTest.ps1 -Url "https://localhost:7224/api/User/login?emailAddress=&password=123456" -RequestCount 20
+
+
+
+ONE OF With NO Exception
+.\PerformanceTest.ps1 -Url "https://localhost:7224/api/User/login?emailAddress=salihcantekin@gmail.com&password=123456" -RequestCount 20
